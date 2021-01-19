@@ -5,6 +5,8 @@ Parameter Version = "1.0.0";
 
 Parameter Global = "^dc.Sample.PersonD";
 
+Parameter GlobalI = "^dc.Sample.PersonI";
+
 XData UrlMap [ XMLNamespace = "http://www.intersystems.com/urlmap" ]
 {
 <Routes>
@@ -30,8 +32,7 @@ XData UrlMap [ XMLNamespace = "http://www.intersystems.com/urlmap" ]
 <Route Url="/multi/sql/:id" Method="DELETE" Call="DeletePersonSQL"/>
 <!-- Delete a record via Key Value-->
 <Route Url="/multi/keyval/:id" Method="DELETE" Call="DeletePersonKeyValue"/>
-
-
+<Route Url="/truncate" Method="TRUNCATE" Call="Truncate"/>
 </Routes>
 }
 
@@ -43,6 +44,14 @@ ClassMethod GetInfo() As %Status
     "version": (version)
   }
   RETURN ..%ProcessResult($$$OK, info)
+}
+
+/// Truncate = delete all records
+ClassMethod Truncate() As %Status
+{
+    set sc = $$$OK
+    kill @..#Global,@..#GlobalI
+    return sc
 }
 
 /// Generate records of Sample.Person

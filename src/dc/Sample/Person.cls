@@ -11,6 +11,8 @@ Property Phone As %VarString;
 
 Property DOB As %Date(MAXVAL = "$piece($horolog, "","", 1)");
 
+Property Allergies As array Of %String(POPSPEC = "Color():5:Date()");
+
 /// Index for property DOB
 Index DOBIndex On DOB;
 
@@ -21,6 +23,11 @@ ClassMethod AddTestData(amount As %Integer = 10)
 
 Storage Default
 {
+<Data name="Allergies">
+<Attribute>Allergies</Attribute>
+<Structure>subnode</Structure>
+<Subscript>"Allergies"</Subscript>
+</Data>
 <Data name="PersonDefaultData">
 <Value name="1">
 <Value>%%CLASSNAME</Value>
