@@ -32,7 +32,8 @@ XData UrlMap [ XMLNamespace = "http://www.intersystems.com/urlmap" ]
 <Route Url="/multi/sql/:id" Method="DELETE" Call="DeletePersonSQL"/>
 <!-- Delete a record via Key Value-->
 <Route Url="/multi/keyval/:id" Method="DELETE" Call="DeletePersonKeyValue"/>
-<Route Url="/truncate" Method="TRUNCATE" Call="Truncate"/>
+<!-- Kill all records -->
+<Route Url="/kill" Method="GET" Call="killAll"/>
 </Routes>
 }
 
@@ -47,10 +48,14 @@ ClassMethod GetInfo() As %Status
 }
 
 /// Truncate = delete all records
-ClassMethod Truncate() As %Status
+ClassMethod killAll() As %Status
 {
     set sc = $$$OK
     kill @..#Global,@..#GlobalI
+    Set %response.ContentType = ..#CONTENTTYPEJSON
+    set json={}
+    set json.status="all persons removed from database"
+    do json.%ToJSON()
     return sc
 }
 

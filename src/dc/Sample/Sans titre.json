@@ -1,0 +1,302 @@
+[
+  {
+    "Person": 1,
+    "ID": "1||43265",
+    "Allergies": "Blue",
+    "element_key": "43265"
+  },
+  {
+    "Person": 1,
+    "ID": "1||44967",
+    "Allergies": "Green",
+    "element_key": "44967"
+  },
+  {
+    "Person": 1,
+    "ID": "1||55475",
+    "Allergies": "Black",
+    "element_key": "55475"
+  },
+  {
+    "Person": 1,
+    "ID": "1||63867",
+    "Allergies": "Red",
+    "element_key": "63867"
+  },
+  {
+    "Person": 2,
+    "ID": "2||51256",
+    "Allergies": "Yellow",
+    "element_key": "51256"
+  },
+  {
+    "Person": 2,
+    "ID": "2||52796",
+    "Allergies": "Yellow",
+    "element_key": "52796"
+  },
+  {
+    "Person": 2,
+    "ID": "2||55803",
+    "Allergies": "Yellow",
+    "element_key": "55803"
+  },
+  {
+    "Person": 4,
+    "ID": "4||50892",
+    "Allergies": "Yellow",
+    "element_key": "50892"
+  },
+  {
+    "Person": 4,
+    "ID": "4||52748",
+    "Allergies": "Yellow",
+    "element_key": "52748"
+  },
+  {
+    "Person": 4,
+    "ID": "4||53447",
+    "Allergies": "Red",
+    "element_key": "53447"
+  },
+  {
+    "Person": 4,
+    "ID": "4||57787",
+    "Allergies": "Yellow",
+    "element_key": "57787"
+  },
+  {
+    "Person": 5,
+    "ID": "5||40940",
+    "Allergies": "Red",
+    "element_key": "40940"
+  },
+  {
+    "Person": 6,
+    "ID": "6||36019",
+    "Allergies": "Blue",
+    "element_key": "36019"
+  },
+  {
+    "Person": 6,
+    "ID": "6||41789",
+    "Allergies": "Red",
+    "element_key": "41789"
+  },
+  {
+    "Person": 6,
+    "ID": "6||48161",
+    "Allergies": "Red",
+    "element_key": "48161"
+  },
+  {
+    "Person": 6,
+    "ID": "6||56935",
+    "Allergies": "Red",
+    "element_key": "56935"
+  },
+  {
+    "Person": 6,
+    "ID": "6||57488",
+    "Allergies": "Red",
+    "element_key": "57488"
+  },
+  {
+    "Person": 7,
+    "ID": "7||58202",
+    "Allergies": "Yellow",
+    "element_key": "58202"
+  },
+  {
+    "Person": 8,
+    "ID": "8||33537",
+    "Allergies": "Blue",
+    "element_key": "33537"
+  },
+  {
+    "Person": 8,
+    "ID": "8||34806",
+    "Allergies": "Black",
+    "element_key": "34806"
+  },
+  {
+    "Person": 8,
+    "ID": "8||35979",
+    "Allergies": "Green",
+    "element_key": "35979"
+  },
+  {
+    "Person": 8,
+    "ID": "8||56326",
+    "Allergies": "Blue",
+    "element_key": "56326"
+  },
+  {
+    "Person": 8,
+    "ID": "8||60227",
+    "Allergies": "Yellow",
+    "element_key": "60227"
+  },
+  {
+    "Person": 9,
+    "ID": "9||30357",
+    "Allergies": "Blue",
+    "element_key": "30357"
+  },
+  {
+    "Person": 9,
+    "ID": "9||49474",
+    "Allergies": "Red",
+    "element_key": "49474"
+  },
+  {
+    "Person": 9,
+    "ID": "9||59249",
+    "Allergies": "Green",
+    "element_key": "59249"
+  },
+  {
+    "Person": 10,
+    "ID": "10||34204",
+    "Allergies": "Black",
+    "element_key": "34204"
+  },
+  {
+    "Person": 10,
+    "ID": "10||37687",
+    "Allergies": "Yellow",
+    "element_key": "37687"
+  },
+  {
+    "Person": 10,
+    "ID": "10||37912",
+    "Allergies": "Black",
+    "element_key": "37912"
+  },
+  {
+    "Person": 10,
+    "ID": "10||43052",
+    "Allergies": "Red",
+    "element_key": "43052"
+  },
+  {
+    "Person": 10,
+    "ID": "10||45757",
+    "Allergies": "Yellow",
+    "element_key": "45757"
+  },
+  {
+    "Person": 11,
+    "ID": "11||45880",
+    "Allergies": "Blue",
+    "element_key": "45880"
+  },
+  {
+    "Person": 12,
+    "ID": "12||31499",
+    "Allergies": "Yellow",
+    "element_key": "31499"
+  },
+  {
+    "Person": 12,
+    "ID": "12||44617",
+    "Allergies": "Blue",
+    "element_key": "44617"
+  },
+  {
+    "Person": 12,
+    "ID": "12||46980",
+    "Allergies": "Black",
+    "element_key": "46980"
+  },
+  {
+    "Person": 12,
+    "ID": "12||51222",
+    "Allergies": "Black",
+    "element_key": "51222"
+  },
+  {
+    "Person": 12,
+    "ID": "12||56933",
+    "Allergies": "Blue",
+    "element_key": "56933"
+  },
+  {
+    "Person": 13,
+    "ID": "13||49879",
+    "Allergies": "Red",
+    "element_key": "49879"
+  },
+  {
+    "Person": 13,
+    "ID": "13||58286",
+    "Allergies": "Green",
+    "element_key": "58286"
+  },
+  {
+    "Person": 13,
+    "ID": "13||59169",
+    "Allergies": "Red",
+    "element_key": "59169"
+  },
+  {
+    "Person": 13,
+    "ID": "13||61507",
+    "Allergies": "Green",
+    "element_key": "61507"
+  },
+  {
+    "Person": 13,
+    "ID": "13||65615",
+    "Allergies": "Red",
+    "element_key": "65615"
+  },
+  {
+    "Person": 14,
+    "ID": "14||36241",
+    "Allergies": "Blue",
+    "element_key": "36241"
+  },
+  {
+    "Person": 14,
+    "ID": "14||37741",
+    "Allergies": "Red",
+    "element_key": "37741"
+  },
+  {
+    "Person": 14,
+    "ID": "14||45124",
+    "Allergies": "Blue",
+    "element_key": "45124"
+  },
+  {
+    "Person": 14,
+    "ID": "14||61935",
+    "Allergies": "Blue",
+    "element_key": "61935"
+  },
+  {
+    "Person": 14,
+    "ID": "14||63305",
+    "Allergies": "Black",
+    "element_key": "63305"
+  },
+  {
+    "Person": 15,
+    "ID": "15||41909",
+    "Allergies": "Blue",
+    "element_key": "41909"
+  },
+  {
+    "Person": 16,
+    "ID": "16||38633",
+    "Allergies": "Blue",
+    "element_key": "38633"
+  },
+  {
+    "Person": 16,
+    "ID": "16||44802",
+    "Allergies": "Red",
+    "element_key": "44802"
+  }
+]

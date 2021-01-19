@@ -5,6 +5,8 @@ Parameter Version = "1.0.0";
 
 Parameter Global = "^dc.Sample.PersonD";
 
+Parameter GlobalI = "^dc.Sample.PersonI";
+
 XData UrlMap [ XMLNamespace = "http://www.intersystems.com/urlmap" ]
 {
 <Routes>
@@ -14,6 +16,8 @@ XData UrlMap [ XMLNamespace = "http://www.intersystems.com/urlmap" ]
 <Route Url="/persons/all" Method="GET" Call="GetAllPersons"/>
 <!-- Generate records of Person class -->
 <Route Url="/persons/gen/:amount" Method="GET" Call="GenerateRecords"/>
+<!-- Generate records of Person class -->
+<Route Url="/patients/gen/:amount" Method="GET" Call="GeneratePatients"/>
 <!-- Get a record via Object API-->
 <Route Url="/multi/object/:id" Method="GET" Call="GetPersonObject"/>
 <!-- Update a person with id via Object API-->
@@ -30,8 +34,8 @@ XData UrlMap [ XMLNamespace = "http://www.intersystems.com/urlmap" ]
 <Route Url="/multi/sql/:id" Method="DELETE" Call="DeletePersonSQL"/>
 <!-- Delete a record via Key Value-->
 <Route Url="/multi/keyval/:id" Method="DELETE" Call="DeletePersonKeyValue"/>
-
-
+<!-- Kill all records -->
+<Route Url="/kill" Method="GET" Call="killAll"/>
 </Routes>
 }
 
@@ -40,9 +44,26 @@ ClassMethod GetInfo() As %Status
 {
   SET version = ..#Version
   SET info = {
-    "version": (version)
+    "version": (version),
+    "iris":($ZVERSION),
+    "instance":($SYSTEM),
+    "user":($username),
+    "roles":($roles),
+    "ts":($zdt($now(),3,,6))
   }
   RETURN ..%ProcessResult($$$OK, info)
+}
+
+/// Truncate = delete all records
+ClassMethod killAll() As %Status
+{
+    set sc = $$$OK
+    kill @..#Global,@..#GlobalI
+    Set %response.ContentType = ..#CONTENTTYPEJSON
+    set json={}
+    set json.status="all persons removed from database"
+    do json.%ToJSON()
+    return sc
 }
 
 /// Generate records of Sample.Person
@@ -50,6 +71,14 @@ ClassMethod GenerateRecords(amount As %Integer) As %Status
 {
     set sc = $$$OK
     do ##class(dc.Sample.Person).AddTestData(amount)
+    return sc
+}
+
+/// Generate records of Sample.Person
+ClassMethod GeneratePatients(amount As %Integer) As %Status
+{
+    set sc = $$$OK
+    do ##class(dc.Sample.Patient).AddTestData(amount)
     return sc
 }
 
